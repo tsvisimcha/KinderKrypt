@@ -14,7 +14,7 @@ Encryption for the masses
 #### Goals ####
 Goals
 * Cross platform
-* 
+* Easy to use
 
 #### APIs ####
 * TkInter -- To write our GUI
