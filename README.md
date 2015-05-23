@@ -17,8 +17,8 @@ Goals
 * 
 
 #### APIs ####
-TkInter -- To write our GUI
-https://wiki.python.org/moin/TkInter
-http://tkinter.unpythonic.net/wiki/
-python-gnupg -- To write the gpg part
-http://pythonhosted.org/python-gnupg/
+* TkInter -- To write our GUI
+* https://wiki.python.org/moin/TkInter
+* http://tkinter.unpythonic.net/wiki/
+* python-gnupg -- To write the gpg part
+* http://pythonhosted.org/python-gnupg/
