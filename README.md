@@ -11,6 +11,14 @@ Encryption for the masses
 - [ ] Encyrpt text to clipboard and/or file
 - [ ] Decrypt text
 
+#### Goals ####
 Goals
 * Cross platform
 * 
+
+#### APIs ####
+TkInter -- To write our GUI
+https://wiki.python.org/moin/TkInter
+http://tkinter.unpythonic.net/wiki/
+python-gnupg -- To write the gpg part
+http://pythonhosted.org/python-gnupg/
