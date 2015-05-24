@@ -14,7 +14,7 @@ Encryption for the masses
 #### Goals ####
 Goals
 * Cross platform
-* 
+* Easy to use
 
 #### APIs ####
 * TkInter -- To write our GUI
@@ -22,3 +22,8 @@ Goals
 * http://tkinter.unpythonic.net/wiki/
 * python-gnupg -- To write the gpg part
 * http://pythonhosted.org/python-gnupg/
+
+#### Tutorials and Resources ####
+
+* http://www.tkdocs.com/tutorial/firstexample.html
+* http://tkinter.unpythonic.net/wiki/ExampleCode
