@@ -26,3 +26,4 @@ Goals
 #### Tutorials and Resources ####
 
 * http://www.tkdocs.com/tutorial/firstexample.html
+* http://tkinter.unpythonic.net/wiki/ExampleCode
