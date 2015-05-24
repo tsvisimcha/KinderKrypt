@@ -27,3 +27,4 @@ Goals
 
 * http://www.tkdocs.com/tutorial/firstexample.html
 * http://tkinter.unpythonic.net/wiki/ExampleCode
+* http://effbot.org/tkinterbook/grid.htm
