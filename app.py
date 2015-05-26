@@ -69,7 +69,7 @@ class KinderKrypt(tk.Frame):
     def __init__(self, parent=None, *args, **kwargs):
         tk.Frame.__init__(self, parent, *args, **kwargs)
         # TODO: general home directory string? across os's.
-        self.gpg = gnupg.GPG(gnupghome='test')
+        self.gpg = gnupg.GPG(homedir='/home/yandil/.gnupg')
         self.parent = parent
         self.grid()
         self.create_widgets()
