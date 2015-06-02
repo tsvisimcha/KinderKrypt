@@ -89,7 +89,7 @@ class KeyManagementMenu(tk.Frame):
             self.top, text="Search",
             command=self.key_search)
         self.save_button = tk.Button(self.top,
-                                     text="Save selected key",
+                                     text="Save most recent result",
                                      command=self.save_key)
         self.save_button.grid(row=5, column=0)
         self.search_button.grid(row=3, column=0)
@@ -148,16 +148,22 @@ class KeyManagementMenu(tk.Frame):
 
     def key_search(self):
         search_str = self.search_entry.get()
-        result_str = self.gpg.search_keys(search_str)
-        if result_str == []:
-            result_str = "No matches were found"
-        self.output_box.insert(tk.END, result_str)
+        self.result_str = self.gpg.search_keys(search_str)
+        if self.result_str == []:
+            self.result_str = "No matches were found"
+        self.output_box.insert(tk.END, self.result_str)
 
     def save_key(self):
-        key_data = self.output_box.get(tk.ACTIVE)
-        if key_data != []:
-            import_result = self.gpg.import_keys(key_data)
-            print import_result
+        key_data = (self.output_box.get(tk.ACTIVE))
+        self.keyid = ""
+        for keys in self.result_str:
+            self.keyid = keys['keyid']
+        if self.result_str != []:
+            import_result = self.gpg.recv_keys('pgp.mit.edu/',self.keyid)
+            """ the reason this currently doesn't work is that
+            this needs to be the data... the whole key, not the
+            descriptive tags """
+            print import_result.fingerprints
 
     def cleanup(self):
         self.value = self.name_entry.get()
